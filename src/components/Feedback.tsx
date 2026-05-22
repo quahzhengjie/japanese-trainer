@@ -21,10 +21,10 @@ export function Feedback({ result, exercise, onNext, onOpenGrammar }: Props) {
       </div>
       <p>{result.feedback}</p>
 
-      {/* Typed-answer questions: show the Malay answer with a button to hear it. */}
+      {/* Typed-answer questions: show the Japanese answer with a button to hear it. */}
       {exercise.type !== 'mcq' && exercise.accepted && exercise.accepted[0] && (
         <p className="answer-line">
-          <span lang="ms">{exercise.accepted[0]}</span>
+          <span lang="ja">{exercise.accepted[0]}</span>
           <SpeakButton text={exercise.accepted[0]} />
         </p>
       )}

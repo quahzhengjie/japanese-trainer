@@ -1,7 +1,7 @@
 import { canSpeak, speak } from '../lib/speech';
 import { SpeakerIcon } from './icons';
 
-/** A small button that reads a Malay phrase aloud. Renders nothing if unsupported. */
+/** A small button that reads a Japanese phrase aloud. Renders nothing if unsupported. */
 export function SpeakButton({ text }: { text: string }) {
   if (!canSpeak()) return null;
   return (

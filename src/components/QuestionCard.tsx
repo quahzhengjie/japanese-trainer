@@ -64,9 +64,9 @@ export function QuestionCard({ exercise, locked, result, onAnswer }: Props) {
             autoFocus
             value={text}
             disabled={locked}
-            placeholder="Type your answer in Malay…"
+            placeholder="Type your answer — rōmaji or kana…"
             aria-label="Your answer"
-            lang="ms"
+            lang="ja"
             autoCapitalize="off"
             autoCorrect="off"
             spellCheck={false}
