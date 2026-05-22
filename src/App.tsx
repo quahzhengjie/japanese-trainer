@@ -21,6 +21,7 @@ import { GrammarView } from './components/GrammarView';
 import { TabBar } from './components/TabBar';
 import type { Tab } from './components/TabBar';
 import { ThemeToggle } from './components/ThemeToggle';
+import { RomajiToggle } from './components/RomajiToggle';
 import { Onboarding } from './components/Onboarding';
 
 const LEVEL_ORDER = ['N5', 'N4', 'N3', 'N2', 'N1'];
@@ -157,7 +158,10 @@ export default function App() {
               <span className="brand-mark">日</span>
               Japanese Trainer
             </span>
-            <ThemeToggle />
+            <div className="topbar-right">
+              <RomajiToggle />
+              <ThemeToggle />
+            </div>
           </header>
           <main>
             {tab === 'home' && (

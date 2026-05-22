@@ -81,3 +81,64 @@ export function romajiToHiragana(input: string): string {
   }
   return out;
 }
+
+// Hiragana -> romaji, for the beginner reading aid (the reverse direction).
+const HIRA_ROMAJI: Record<string, string> = {
+  あ: 'a', い: 'i', う: 'u', え: 'e', お: 'o',
+  か: 'ka', き: 'ki', く: 'ku', け: 'ke', こ: 'ko',
+  が: 'ga', ぎ: 'gi', ぐ: 'gu', げ: 'ge', ご: 'go',
+  さ: 'sa', し: 'shi', す: 'su', せ: 'se', そ: 'so',
+  ざ: 'za', じ: 'ji', ず: 'zu', ぜ: 'ze', ぞ: 'zo',
+  た: 'ta', ち: 'chi', つ: 'tsu', て: 'te', と: 'to',
+  だ: 'da', ぢ: 'ji', づ: 'zu', で: 'de', ど: 'do',
+  な: 'na', に: 'ni', ぬ: 'nu', ね: 'ne', の: 'no',
+  は: 'ha', ひ: 'hi', ふ: 'fu', へ: 'he', ほ: 'ho',
+  ば: 'ba', び: 'bi', ぶ: 'bu', べ: 'be', ぼ: 'bo',
+  ぱ: 'pa', ぴ: 'pi', ぷ: 'pu', ぺ: 'pe', ぽ: 'po',
+  ま: 'ma', み: 'mi', む: 'mu', め: 'me', も: 'mo',
+  や: 'ya', ゆ: 'yu', よ: 'yo',
+  ら: 'ra', り: 'ri', る: 'ru', れ: 're', ろ: 'ro',
+  わ: 'wa', を: 'o', ん: 'n',
+  ぁ: 'a', ぃ: 'i', ぅ: 'u', ぇ: 'e', ぉ: 'o',
+};
+const SMALL_Y: Record<string, string> = { ゃ: 'ya', ゅ: 'yu', ょ: 'yo' };
+
+/**
+ * Convert kana (hiragana or katakana) to romaji — a beginner reading aid.
+ * Non-kana characters (kanji, ASCII, punctuation) pass through unchanged.
+ */
+export function kanaToRomaji(input: string): string {
+  const s = katakanaToHiragana(input);
+  let out = '';
+  let sokuon = false;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === 'っ') {
+      sokuon = true;
+      continue;
+    }
+    if (c === 'ー') {
+      const last = out[out.length - 1];
+      if (last && 'aiueo'.includes(last)) out += last;
+      continue;
+    }
+    const base = HIRA_ROMAJI[c];
+    if (!base) {
+      out += c;
+      sokuon = false;
+      continue;
+    }
+    let romaji = base;
+    const small = SMALL_Y[s[i + 1]];
+    if (small && base.length > 1 && base.endsWith('i')) {
+      romaji = base.slice(0, -1) + small;
+      i += 1;
+    }
+    if (sokuon) {
+      romaji = (romaji.startsWith('ch') ? 't' : romaji[0]) + romaji;
+      sokuon = false;
+    }
+    out += romaji;
+  }
+  return out;
+}

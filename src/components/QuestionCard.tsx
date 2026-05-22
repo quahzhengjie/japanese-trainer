@@ -1,5 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { CheckResult, Exercise } from '../types';
+import { kanaToRomaji } from '../lib/kana';
+import { romajiEnabled, onRomajiChange } from '../lib/readingAid';
+
+const KANA_RE = /[぀-ヿ]/;
 
 interface Props {
   exercise: Exercise;
@@ -13,7 +17,15 @@ interface Props {
 export function QuestionCard({ exercise, locked, result, onAnswer }: Props) {
   const [text, setText] = useState('');
   const [selected, setSelected] = useState<number | null>(null);
+  const [romaji, setRomaji] = useState(romajiEnabled);
+
+  useEffect(() => onRomajiChange(() => setRomaji(romajiEnabled())), []);
+
   const isMcq = exercise.type === 'mcq';
+  // Reading aid: show romaji under the prompt — but never on the kana-learning
+  // questions, where it would simply give the answer away.
+  const showRomaji =
+    romaji && exercise.skill !== 'kana' && KANA_RE.test(exercise.prompt);
 
   // After answering: green the correct option, red the wrong pick, dim the rest.
   function optionClass(index: number, correct: boolean): string {
@@ -29,7 +41,14 @@ export function QuestionCard({ exercise, locked, result, onAnswer }: Props) {
         <span className="pill">{exercise.level}</span>
         <span className="pill pill-soft">{exercise.skill}</span>
       </div>
-      <h2 className="prompt">{exercise.prompt}</h2>
+      <h2 className="prompt" lang="ja">
+        {exercise.prompt}
+      </h2>
+      {showRomaji && (
+        <p className="romaji-line" aria-hidden="true">
+          {kanaToRomaji(exercise.prompt)}
+        </p>
+      )}
 
       {isMcq ? (
         <div className="options">

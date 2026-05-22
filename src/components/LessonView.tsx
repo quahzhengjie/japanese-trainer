@@ -4,6 +4,7 @@ import { loadGrammarNote } from '../lib/bank';
 import { MarkdownNote } from './MarkdownNote';
 import { PracticeQuestion } from './PracticeQuestion';
 import { ThemeToggle } from './ThemeToggle';
+import { RomajiToggle } from './RomajiToggle';
 
 interface Props {
   lesson: Lesson;
@@ -76,6 +77,7 @@ export function LessonView({
         </button>
         <div className="topbar-right">
           <span className="stat">{lesson.title}</span>
+          <RomajiToggle />
           <ThemeToggle />
         </div>
       </header>

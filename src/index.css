@@ -742,6 +742,24 @@ button.link {
   }
 }
 
+/* ---- reading aid (romaji) ---- */
+.romaji-line {
+  margin: -10px 0 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.romaji-btn span {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.romaji-btn-on {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+}
+
 /* ---- home / overview ---- */
 .home {
   display: flex;
