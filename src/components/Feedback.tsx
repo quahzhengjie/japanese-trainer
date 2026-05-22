@@ -11,7 +11,11 @@ interface Props {
 
 export function Feedback({ result, exercise, onNext, onOpenGrammar }: Props) {
   const tone = result.correct ? 'ok' : result.closeMiss ? 'near' : 'bad';
-  const heading = result.correct ? 'Betul!' : result.closeMiss ? 'So close' : 'Belum betul';
+  const heading = result.correct
+    ? 'Correct!'
+    : result.closeMiss
+      ? 'So close'
+      : 'Not quite';
 
   return (
     <section className={`feedback feedback-${tone}`} role="status" aria-live="polite">
