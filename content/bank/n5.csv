@@ -1,0 +1,36 @@
+id,level,skill,lesson,type,prompt,opt_a,opt_a_correct,opt_a_why,opt_b,opt_b_correct,opt_b_why,opt_c,opt_c_correct,opt_c_why,opt_d,opt_d_correct,opt_d_why,accepted,explanation,grammar_note,tags
+n5-001,N5,kana,hira-vowels,mcq,"What is the reading of あ?","a",true,"Correct - あ is the vowel a.","i",false,"i is the kana い.","u",false,"u is the kana う.","o",false,"o is the kana お.",,"あ is the first hiragana, read a.",kana-vowels,hiragana
+n5-002,N5,kana,hira-vowels,mcq,"Which hiragana is read i?","あ",false,"あ is read a.","い",true,"Correct - い is read i.","う",false,"う is read u.","え",false,"え is read e.",,"い is the kana for the vowel i.",kana-vowels,hiragana
+n5-003,N5,kana,hira-vowels,mcq,"What is the reading of う?","o",false,"o is お.","e",false,"e is え.","u",true,"Correct - う is read u.","a",false,"a is あ.",,"う is read u, like the oo in moon.",kana-vowels,hiragana
+n5-004,N5,kana,hira-vowels,text,"Type the romaji for え",,,,,,,,,,,,,e,"え is read e.",kana-vowels,hiragana
+n5-005,N5,kana,hira-vowels,mcq,"Which hiragana is read o?","お",true,"Correct - お is read o.","あ",false,"あ is read a.","え",false,"え is read e.","う",false,"う is read u.",,"お is the kana for the vowel o.",kana-vowels,hiragana
+n5-006,N5,kana,hira-vowels,text,"Type the hiragana for a",,,,,,,,,,,,,あ,"The hiragana for a is あ.",kana-vowels,hiragana
+n5-007,N5,kana,hira-vowels,mcq,"The Japanese vowels in order are a, i, u, e, ___ ?","o",true,"Correct - the order is a i u e o.","y",false,"y is not a Japanese vowel.","a",false,"a is the first vowel, not the last.","n",false,"ん comes much later, and is not a vowel.",,"The fixed vowel order is a, i, u, e, o.",kana-vowels,hiragana
+n5-008,N5,kana,hira-k,mcq,"What is the reading of か?","ka",true,"Correct - か is read ka.","ki",false,"ki is き.","ku",false,"ku is く.","sa",false,"sa is さ.",,"か is the k sound plus a: ka.",kana-k,hiragana
+n5-009,N5,kana,hira-k,mcq,"Which hiragana is read ki?","き",true,"Correct - き is read ki.","か",false,"か is read ka.","く",false,"く is read ku.","け",false,"け is read ke.",,"き is the k sound plus i: ki.",kana-k,hiragana
+n5-010,N5,kana,hira-k,mcq,"What is the reading of く?","ko",false,"ko is こ.","ku",true,"Correct - く is read ku.","ke",false,"ke is け.","ka",false,"ka is か.",,"く is the k sound plus u: ku.",kana-k,hiragana
+n5-011,N5,kana,hira-k,text,"Type the romaji for け",,,,,,,,,,,,,ke,"け is read ke.",kana-k,hiragana
+n5-012,N5,kana,hira-k,mcq,"Which hiragana is read ko?","こ",true,"Correct - こ is read ko.","か",false,"か is read ka.","く",false,"く is read ku.","き",false,"き is read ki.",,"こ is the k sound plus o: ko.",kana-k,hiragana
+n5-013,N5,kana,hira-k,text,"Type the hiragana for ka",,,,,,,,,,,,,か,"The hiragana for ka is か.",kana-k,hiragana
+n5-014,N5,kana,hira-k,mcq,"か is the k sound joined to which vowel?","a",true,"Correct - k + a gives か (ka).","i",false,"k + i gives き (ki).","u",false,"k + u gives く (ku).","o",false,"k + o gives こ (ko).",,"Every K-row kana is k plus a vowel; か is k + a.",kana-k,hiragana
+n5-015,N5,kana,hira-s,mcq,"What is the reading of さ?","sa",true,"Correct - さ is read sa.","shi",false,"shi is し.","su",false,"su is す.","se",false,"se is せ.",,"さ is the s sound plus a: sa.",kana-s,hiragana
+n5-016,N5,kana,hira-s,mcq,"し is read...","shi",true,"Correct - し is read shi, not si.","si",false,"Hepburn romanisation writes this kana shi.","su",false,"su is す.","chi",false,"chi is ち.",,"し breaks the pattern: it is shi, not si.",kana-s,hiragana
+n5-017,N5,kana,hira-s,mcq,"What is the reading of す?","su",true,"Correct - す is read su.","so",false,"so is そ.","se",false,"se is せ.","sa",false,"sa is さ.",,"す is the s sound plus u: su.",kana-s,hiragana
+n5-018,N5,kana,hira-s,text,"Type the romaji for せ",,,,,,,,,,,,,se,"せ is read se.",kana-s,hiragana
+n5-019,N5,kana,hira-s,mcq,"Which hiragana is read so?","そ",true,"Correct - そ is read so.","さ",false,"さ is read sa.","す",false,"す is read su.","し",false,"し is read shi.",,"そ is the s sound plus o: so.",kana-s,hiragana
+n5-020,N5,kana,hira-s,text,"Type the hiragana for shi",,,,,,,,,,,,,し,"The hiragana for shi is し.",kana-s,hiragana
+n5-021,N5,kana,hira-s,mcq,"Which S-row kana has an irregular reading?","し (shi)",true,"Correct - し is shi, not si.","さ (sa)",false,"さ is regular: sa.","す (su)",false,"す is regular: su.","せ (se)",false,"せ is regular: se.",,"Only し is irregular in the S row - it is shi.",kana-s,hiragana
+n5-022,N5,kana,hira-t,mcq,"What is the reading of た?","ta",true,"Correct - た is read ta.","chi",false,"chi is ち.","tsu",false,"tsu is つ.","te",false,"te is て.",,"た is the t sound plus a: ta.",kana-t,hiragana
+n5-023,N5,kana,hira-t,mcq,"ち is read...","chi",true,"Correct - ち is read chi.","ti",false,"In Hepburn this kana is chi, not ti.","si",false,"si is not how ち is read.","ki",false,"ki is き.",,"ち is irregular: it is chi, not ti.",kana-t,hiragana
+n5-024,N5,kana,hira-t,mcq,"つ is read...","tsu",true,"Correct - つ is read tsu.","tu",false,"In Hepburn this kana is tsu, not tu.","su",false,"su is す.","chi",false,"chi is ち.",,"つ is irregular: it is tsu, not tu.",kana-t,hiragana
+n5-025,N5,kana,hira-t,text,"Type the romaji for て",,,,,,,,,,,,,te,"て is read te.",kana-t,hiragana
+n5-026,N5,kana,hira-t,mcq,"Which hiragana is read to?","と",true,"Correct - と is read to.","た",false,"た is read ta.","つ",false,"つ is read tsu.","て",false,"て is read te.",,"と is the t sound plus o: to.",kana-t,hiragana
+n5-027,N5,kana,hira-t,text,"Type the hiragana for chi",,,,,,,,,,,,,ち,"The hiragana for chi is ち.",kana-t,hiragana
+n5-028,N5,kana,hira-t,mcq,"Which two T-row kana have irregular readings?","ち and つ",true,"Correct - ち is chi and つ is tsu.","た and て",false,"た (ta) and て (te) are both regular.","た and と",false,"た (ta) and と (to) are both regular.","て and と",false,"て (te) and と (to) are both regular.",,"In the T row, ち (chi) and つ (tsu) break the pattern.",kana-t,hiragana
+n5-029,N5,kana,hira-n,mcq,"What is the reading of な?","na",true,"Correct - な is read na.","ni",false,"ni is に.","nu",false,"nu is ぬ.","ne",false,"ne is ね.",,"な is the n sound plus a: na.",kana-n,hiragana
+n5-030,N5,kana,hira-n,mcq,"Which hiragana is read ni?","に",true,"Correct - に is read ni.","な",false,"な is read na.","ぬ",false,"ぬ is read nu.","ね",false,"ね is read ne.",,"に is the n sound plus i: ni.",kana-n,hiragana
+n5-031,N5,kana,hira-n,mcq,"What is the reading of ぬ?","nu",true,"Correct - ぬ is read nu.","no",false,"no is の.","ne",false,"ne is ね.","na",false,"na is な.",,"ぬ is the n sound plus u: nu.",kana-n,hiragana
+n5-032,N5,kana,hira-n,text,"Type the romaji for ね",,,,,,,,,,,,,ne,"ね is read ne.",kana-n,hiragana
+n5-033,N5,kana,hira-n,mcq,"Which hiragana is read no?","の",true,"Correct - の is read no.","な",false,"な is read na.","ぬ",false,"ぬ is read nu.","に",false,"に is read ni.",,"の is the n sound plus o: no.",kana-n,hiragana
+n5-034,N5,kana,hira-n,text,"Type the hiragana for na",,,,,,,,,,,,,な,"The hiragana for na is な.",kana-n,hiragana
+n5-035,N5,kana,hira-n,mcq,"ぬ is easy to confuse with which look-alike kana?","め (me)",true,"Correct - ぬ (nu) and め (me) look very similar.","か (ka)",false,"か does not resemble ぬ.","と (to)",false,"と does not resemble ぬ.","せ (se)",false,"せ does not resemble ぬ.",,"ぬ (nu) and め (me) are a classic look-alike pair - check the strokes.",kana-n,hiragana
