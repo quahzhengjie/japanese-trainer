@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // `base` must match the GitHub Pages repo name for project pages
-// (https://<user>.github.io/malay-trainer/). Change it if you rename the repo.
+// (https://<user>.github.io/japanese-trainer/). Change it if you rename the repo.
 export default defineConfig({
   base: '/japanese-trainer/',
   plugins: [

@@ -22,7 +22,9 @@ export function GrammarView({ id, onClose }: Props) {
     setError('');
     loadGrammarNote(id)
       .then((n) => active && setNote(n))
-      .catch((e) => active && setError(String(e.message ?? e)));
+      .catch((e: unknown) =>
+        active && setError(e instanceof Error ? e.message : String(e)),
+      );
     return () => {
       active = false;
     };

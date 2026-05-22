@@ -60,9 +60,9 @@ export default function App() {
         setCourse(c);
         setExercises(ex);
       })
-      .catch((e) => {
+      .catch((e: unknown) => {
         console.error(e);
-        setError(String(e.message ?? e));
+        setError(e instanceof Error ? e.message : String(e));
       });
   }, []);
 

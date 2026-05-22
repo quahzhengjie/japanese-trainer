@@ -11,7 +11,7 @@ describe('katakanaToHiragana', () => {
 describe('romajiToHiragana', () => {
   it('converts basic syllables', () => {
     expect(romajiToHiragana('sushi')).toBe('すし');
-    expect(romajiToHiragana('konnichiwa')).toBe('こんにちわ');
+    expect(romajiToHiragana('kawaii')).toBe('かわいい');
   });
   it('handles the small tsu from a doubled consonant', () => {
     expect(romajiToHiragana('kitte')).toBe('きって');
