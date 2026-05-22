@@ -4,3 +4,43 @@ Hiragana,hira-k,Hiragana — K row,N5,kana-k,The K-row kana: ka ki ku ke ko.
 Hiragana,hira-s,Hiragana — S row,N5,kana-s,The S-row kana: sa shi su se so.
 Hiragana,hira-t,Hiragana — T row,N5,kana-t,The T-row kana: ta chi tsu te to.
 Hiragana,hira-n,Hiragana — N row,N5,kana-n,The N-row kana: na ni nu ne no.
+Hiragana,hira-hm,Hiragana — H & M rows,N5,kana-hm,The H-row and M-row kana.
+Hiragana,hira-yrw,"Hiragana — Y, R, W rows",N5,kana-yrw,The last rows of hiragana plus ん.
+Hiragana,hira-dakuten,Hiragana — dakuten,N5,kana-dakuten,Two marks turn k into g — ga za da ba pa.
+Hiragana,hira-youon,Hiragana — youon,N5,kana-youon,Contracted sounds like kya sha cho.
+Katakana,kata-1,Katakana — first half,N5,kana-katakana-1,The angular second script — vowels through the T row.
+Katakana,kata-2,Katakana — second half,N5,kana-katakana-2,The rest of katakana plus dakuten and long vowels.
+N5 Grammar,g5-desu,です — X is Y,N5,g-desu,The copula です and basic A-wa-B sentences.
+N5 Grammar,g5-particles,The core particles,N5,g-particles5,は が を に で — the small words that mark roles.
+N5 Grammar,g5-demonstratives,これ・それ・あれ,N5,g-demonstratives,Pointing at things near and far.
+N5 Grammar,g5-adjectives,い- and な-adjectives,N5,g-adjectives5,Japan's two adjective types and how they behave.
+N5 Grammar,g5-verbs,Verbs — the ます form,N5,g-verbs-masu,The polite verb form: present negative and past.
+N5 Grammar,g5-questions,Asking questions,N5,g-questions5,The か particle and the question words.
+N5 Vocabulary,v5-greetings,Greetings & set phrases,N5,,The everyday phrases you use first.
+N5 Vocabulary,v5-numbers,Numbers & counting,N5,,Counting in Japanese and the counter words.
+N5 Vocabulary,v5-time,"Time, days & dates",N5,,Telling the time and naming the days.
+N5 Vocabulary,v5-everyday,Everyday vocabulary,N5,,"Family, food and places — the words of daily life."
+N4 Grammar,g4-te-form,The て-form,N4,g-te-form,The endlessly useful te-form and how to build it.
+N4 Grammar,g4-plain,Plain (casual) form,N4,g-plain-form,The dictionary form and casual speech.
+N4 Grammar,g4-past,The plain past — た-form,N4,g-past-plain,Casual past tense.
+N4 Grammar,g4-teiru,～ている,N4,g-teiru,Ongoing actions and continuing states.
+N4 Grammar,g4-potential,Potential form — can do,N4,g-potential,Saying what you are able to do.
+N4 Grammar,g4-musts,Obligation & permission,N4,g-musts,Have to do it and may do it.
+N4 Words,g4-kanji,Meeting kanji,N4,g-kanji-intro,What kanji are and the on and kun readings.
+N4 Words,v4-vocab,N4 vocabulary,N4,,A wider everyday vocabulary for N4.
+N3 Grammar,g3-passive,Passive form,N3,g-passive,When the subject has something done to it.
+N3 Grammar,g3-causative,Causative form,N3,g-causative,Making or letting someone do something.
+N3 Grammar,g3-conditionals,Conditionals,N3,g-conditionals,と ば たら なら — four ways to say if.
+N3 Grammar,g3-connectors,Connecting clauses,N3,g-connectors3,Joining ideas in longer sentences.
+N3 Words,v3-keigo,Meeting keigo,N3,g-keigo-intro,A first look at polite and humble speech.
+N3 Words,v3-vocab,N3 vocabulary,N3,,Intermediate vocabulary for N3.
+N2 Grammar,g2-grammar1,N2 grammar patterns I,N2,g-n2-1,Common N2 sentence patterns.
+N2 Grammar,g2-grammar2,N2 grammar patterns II,N2,g-n2-2,More N2 patterns and nuance.
+N2 Grammar,g2-keigo,Keigo — honorific & humble,N2,g-keigo2,The full honorific and humble verb sets.
+N2 Words,v2-vocab,N2 vocabulary,N2,,Upper-intermediate vocabulary.
+N2 Words,v2-expressions,N2 set expressions,N2,g-n2-expr,Fixed expressions and collocations.
+N1 Grammar,g1-grammar1,N1 grammar patterns I,N1,g-n1-1,Advanced and formal grammar patterns.
+N1 Grammar,g1-grammar2,N1 grammar patterns II,N1,g-n1-2,More advanced patterns and literary forms.
+N1 Grammar,g1-nuance,Subtle N1 nuance,N1,g-n1-nuance,Fine distinctions between similar expressions.
+N1 Mastery,v1-vocab,N1 advanced vocabulary,N1,,Advanced and abstract vocabulary.
+N1 Mastery,v1-idioms,Idioms & four-character compounds,N1,g-idioms,Kotowaza and yojijukugo.
